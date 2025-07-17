@@ -17,3 +17,24 @@ This document outlines:
 - Expected traffic and storage estimation
 
 - Future improvements (V2 roadmap)
+
+#project Setup
+- Clone the project on your local
+- Execute `npm install` on the same path as your root directory of teh download project 
+- Create an `.env` file in the root directory and add the following environment variable:
+    - `PORT=3000`
+- Inside the `src/config` create a new file `config.json` and then add the following piece of json
+
+```
+{
+    "development": {
+    "username": <YOUR_DB_LOGIN_NAME>,
+    "password": <YOUR_DB_PASSWORD>,
+    "database": "Flight_service_DB_DEV",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+}
+
+```
+ 
